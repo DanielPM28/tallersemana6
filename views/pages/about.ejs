@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <%- include('../partials/head'); %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#712cf9">
+    <title>Subir Imágenes</title>
+</head>
+<body>
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+    <div class="px-4 py-5 my-5 text-center">
+    <h2 class="text-body-emphasis">Subir Imagenes</h2>
+    <div class="col-lg-6 mx-auto">
+        <form action="/subir-imagen" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="imagen">Seleccionar imagen:</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*" required>
+            </div>
+    
+            <button type="submit">Subir Imagen</button>
+        </form>
+        </div>
+    </div>
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+</html>
